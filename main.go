@@ -20,7 +20,6 @@ const (
 	dayzer = "2020-12-01T00:00:00Z"
 	prifil = "prices.csv"
 	reqlim = 50
-	update = false
 )
 
 type csvrow struct {
@@ -84,7 +83,7 @@ func main() {
 	des := map[time.Time]float64{}
 	for _, x := range fra.List() {
 		f64, exi := cur[x.Sta]
-		if !update && exi {
+		if exi {
 			{
 				// log.Printf("setting cached prices for %s\n", x.Sta)
 			}
