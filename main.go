@@ -182,10 +182,6 @@ func main() {
 func musapi(des time.Time) float64 {
 	var err error
 
-	// TODO
-	tim := des.String()
-	fmt.Printf("%#v\n", tim)
-
 	var uni int64
 	{
 		uni = des.Add(12 * time.Hour).Unix()
