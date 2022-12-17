@@ -116,7 +116,7 @@ func main() {
 						return budget.Cancel
 					}
 
-					if cur[x.Sta] != 0 && cur[x.Sta] != f64 {
+					{
 						des[x.Sta] = f64
 					}
 
