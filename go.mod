@@ -1,6 +1,6 @@
 module github.com/xh3b4sd/dxy-prices
 
-go 1.19
+go 1.21
 
 require (
 	github.com/xh3b4sd/budget/v3 v3.3.0
