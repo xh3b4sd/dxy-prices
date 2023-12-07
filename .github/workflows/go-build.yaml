@@ -18,10 +18,10 @@ jobs:
         uses: "actions/checkout@v4"
 
       - name: "Setup Go Env"
-        uses: "actions/setup-go@v4"
+        uses: "actions/setup-go@v5"
         with:
           cache: true
-          go-version: "1.19.2"
+          go-version: "1.21.1"
 
       - name: "Check Go Dependencies"
         run: |
@@ -38,6 +38,6 @@ jobs:
 
       - name: "Check Go Linters"
         run: |
-          curl -LOs https://github.com/golangci/golangci-lint/releases/download/v1.50.0/golangci-lint-1.50.0-linux-amd64.tar.gz
-          tar -xzf golangci-lint-1.50.0-linux-amd64.tar.gz
-          ./golangci-lint-1.50.0-linux-amd64/golangci-lint run
+          curl -LOs https://github.com/golangci/golangci-lint/releases/download/v1.54.2/golangci-lint-1.54.2-linux-amd64.tar.gz
+          tar -xzf golangci-lint-1.54.2-linux-amd64.tar.gz
+          ./golangci-lint-1.54.2-linux-amd64/golangci-lint run
